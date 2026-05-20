@@ -1,104 +1,101 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FadeIn, StaggerChildren, StaggerItem, TiltCard } from "./animations";
+import { FadeIn, StaggerChildren, StaggerItem } from "./animations";
 import { type Project } from "@/data/projects";
 import { useProjects } from "@/hooks/useProjects";
 import { ExternalLink, Apple, Play } from "lucide-react";
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
-  const [isHovered, setIsHovered] = useState(false);
+  const primaryLink = project.webLink || project.appStoreLink || project.playStoreLink;
+  const iconClass =
+    "w-11 h-11 rounded-sm bg-surface border border-border-light flex items-center justify-center text-text-secondary hover:text-accent hover:border-accent/30 transition-all duration-200";
 
   return (
-    <TiltCard tiltAmount={4} className="h-full">
-      <motion.div
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        className="group relative rounded-sm bg-surface border border-border overflow-hidden hover:border-border-light transition-all duration-500 h-full"
-      >
-        {/* Image */}
-        <div className="relative aspect-[16/10] overflow-hidden bg-surface-light">
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-            loading={index < 3 ? "eager" : "lazy"}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent opacity-50 group-hover:opacity-30 transition-opacity duration-500" />
+    <div className="group relative rounded-sm bg-surface border border-border overflow-hidden hover:border-border-light transition-all duration-500 h-full">
+      {/* Image */}
+      <div className="relative aspect-[16/10] overflow-hidden bg-surface-light">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+          loading={index < 3 ? "eager" : "lazy"}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent opacity-50 group-hover:opacity-30 transition-opacity duration-500 pointer-events-none" />
 
-          {/* Hover overlay with links */}
-          <AnimatePresence>
-            {isHovered && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.2 }}
-                className="absolute inset-0 bg-background/70 backdrop-blur-sm flex items-center justify-center gap-3"
-              >
-                {project.webLink && (
-                  <a
-                    href={project.webLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-11 h-11 rounded-sm bg-surface border border-border-light flex items-center justify-center text-text-secondary hover:text-accent hover:border-accent/30 transition-all duration-200"
-                    aria-label={`Visit ${project.title} website`}
-                  >
-                    <ExternalLink size={15} strokeWidth={1.5} />
-                  </a>
-                )}
-                {project.appStoreLink && (
-                  <a
-                    href={project.appStoreLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-11 h-11 rounded-sm bg-surface border border-border-light flex items-center justify-center text-text-secondary hover:text-accent hover:border-accent/30 transition-all duration-200"
-                    aria-label={`${project.title} on App Store`}
-                  >
-                    <Apple size={15} strokeWidth={1.5} />
-                  </a>
-                )}
-                {project.playStoreLink && (
-                  <a
-                    href={project.playStoreLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-11 h-11 rounded-sm bg-surface border border-border-light flex items-center justify-center text-text-secondary hover:text-accent hover:border-accent/30 transition-all duration-200"
-                    aria-label={`${project.title} on Play Store`}
-                  >
-                    <Play size={15} strokeWidth={1.5} />
-                  </a>
-                )}
-              </motion.div>
-            )}
-          </AnimatePresence>
+        {/* Link overlay: always mounted. Hidden on hover-capable devices until hover, always visible on touch. */}
+        <div className="absolute inset-0 flex items-center justify-center gap-3 bg-background/70 backdrop-blur-sm transition-opacity duration-200 opacity-0 group-hover:opacity-100 [@media(hover:none)]:opacity-100">
+          {project.webLink && (
+            <a
+              href={project.webLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={iconClass}
+              aria-label={`Visit ${project.title} website`}
+            >
+              <ExternalLink size={15} strokeWidth={1.5} />
+            </a>
+          )}
+          {project.appStoreLink && (
+            <a
+              href={project.appStoreLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={iconClass}
+              aria-label={`${project.title} on App Store`}
+            >
+              <Apple size={15} strokeWidth={1.5} />
+            </a>
+          )}
+          {project.playStoreLink && (
+            <a
+              href={project.playStoreLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={iconClass}
+              aria-label={`${project.title} on Play Store`}
+            >
+              <Play size={15} strokeWidth={1.5} />
+            </a>
+          )}
         </div>
+      </div>
 
-        {/* Content */}
-        <div className="px-6 py-5 sm:px-7 sm:py-6">
-          <div className="flex items-start justify-between mb-3">
+      {/* Content */}
+      <div className="px-6 py-5 sm:px-7 sm:py-6">
+        <div className="flex items-start justify-between mb-3">
+          {primaryLink ? (
+            <a
+              href={primaryLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-display font-semibold text-sm tracking-tight text-text-primary hover:text-accent transition-colors"
+            >
+              {project.title}
+            </a>
+          ) : (
             <h3 className="font-display font-semibold text-sm tracking-tight text-text-primary">
               {project.title}
             </h3>
-            <span className="text-text-muted/40 text-[11px] font-mono">
-              {String(index + 1).padStart(2, "0")}
-            </span>
-          </div>
-          <p className="text-text-muted text-xs leading-[1.7] mb-5">
-            {project.description}
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {project.tags.map((tag) => (
-              <span
-                key={tag}
-                className="px-3 py-1.5 rounded-sm text-[10px] font-medium bg-background text-text-muted border border-border tracking-wide uppercase"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
+          )}
+          <span className="text-text-muted/40 text-[11px] font-mono">
+            {String(index + 1).padStart(2, "0")}
+          </span>
         </div>
-      </motion.div>
-    </TiltCard>
+        <p className="text-text-muted text-xs leading-[1.7] mb-5">
+          {project.description}
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {project.tags.map((tag) => (
+            <span
+              key={tag}
+              className="px-3 py-1.5 rounded-sm text-[10px] font-medium bg-background text-text-muted border border-border tracking-wide uppercase"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
 
