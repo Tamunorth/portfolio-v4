@@ -28,17 +28,18 @@
     "webLink": "https://palomapos.com"
   },
   {
-    "id": 11,
-    "title": "Roppi",
-    "description": "Nigerian Q-commerce flagship. Groceries, food, alcohol, pharmacy, electronics with in-app wallet, real-time tracking, and reservations. Core contributor to the 4-app Roppi ecosystem in Flutter.",
-    "image": "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1779826412/portfolio_projects/roppi_superapp_v1_nanobanana.jpg",
+    "id": 10,
+    "title": "Duffle",
+    "description": "Crypto-to-everyday payments platform. Architected wallet infrastructure, borderless transfers, and the web + mobile client from the ground up.",
+    "image": "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1751137250/portfolio_projects/gdwojl0tfb7ury2bztjl.png",
     "tags": [
-      "Flutter",
-      "Marketplace",
-      "Payments"
+      "React",
+      "Node.js",
+      "Fintech"
     ],
-    "playStoreLink": "https://play.google.com/store/apps/details?id=com.roppi.superapp",
-    "webLink": "https://roppi.co"
+    "webLink": "https://www.getduffle.io/",
+    "appStoreLink": "https://apps.apple.com/us/app/duffle/id6739775801?platform=ipad",
+    "playStoreLink": "https://play.google.com/store/apps/details?id=io.ivorychain.duffle"
   },
   {
     "id": 1,
@@ -55,31 +56,17 @@
     "webLink": "https://kusnap.com"
   },
   {
-    "id": 10,
-    "title": "Duffle",
-    "description": "Crypto-to-everyday payments platform. Architected wallet infrastructure, borderless transfers, and the web + mobile client from the ground up.",
-    "image": "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1751137250/portfolio_projects/gdwojl0tfb7ury2bztjl.png",
-    "tags": [
-      "React",
-      "Node.js",
-      "Fintech"
-    ],
-    "webLink": "https://www.getduffle.io/",
-    "appStoreLink": "https://apps.apple.com/us/app/duffle/id6739775801?platform=ipad",
-    "playStoreLink": "https://play.google.com/store/apps/details?id=io.ivorychain.duffle"
-  },
-  {
-    "id": 9,
-    "title": "Mimecon",
-    "description": "AI emoticon creator that turns photos into animated characters. Engineered the generation pipeline, social feed, and real-time sharing across platforms.",
-    "image": "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703175/portfolio_projects/15_ucadqq.png",
+    "id": 11,
+    "title": "Roppi",
+    "description": "Nigerian Q-commerce flagship. Groceries, food, alcohol, pharmacy, electronics with in-app wallet, real-time tracking, and reservations. Core contributor to the 4-app Roppi ecosystem in Flutter.",
+    "image": "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1779826412/portfolio_projects/roppi_superapp_v1_nanobanana.jpg",
     "tags": [
       "Flutter",
-      "AI/ML",
-      "Firebase"
+      "Marketplace",
+      "Payments"
     ],
-    "playStoreLink": "https://play.google.com/store/apps/details?id=com.ploonet.mimecon&hl=en",
-    "appStoreLink": "https://apps.apple.com/kr/app/id6504627348"
+    "playStoreLink": "https://play.google.com/store/apps/details?id=com.roppi.superapp",
+    "webLink": "https://roppi.co"
   },
   {
     "id": 7,
@@ -177,6 +164,19 @@
       "Education"
     ],
     "appStoreLink": "https://apps.apple.com/in/app/tacbay/id6479637108"
+  },
+  {
+    "id": 9,
+    "title": "Mimecon",
+    "description": "AI emoticon creator that turns photos into animated characters. Engineered the generation pipeline, social feed, and real-time sharing across platforms.",
+    "image": "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703175/portfolio_projects/15_ucadqq.png",
+    "tags": [
+      "Flutter",
+      "AI/ML",
+      "Firebase"
+    ],
+    "playStoreLink": "https://play.google.com/store/apps/details?id=com.ploonet.mimecon&hl=en",
+    "appStoreLink": "https://apps.apple.com/kr/app/id6504627348"
   },
   {
     "id": 4,

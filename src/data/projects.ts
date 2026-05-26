@@ -22,7 +22,8 @@ export const projects: Project[] = [
       "https://play.google.com/store/apps/details?id=app.spreadly.app",
     appStoreLink:
       "https://apps.apple.com/us/app/spreadly-digital-business-card/id6448201235",
-    webLink: "https://spreadly.app",
+    webLink:
+      "https://spreadly.app",
   },
   {
     id: 3,
@@ -34,20 +35,25 @@ export const projects: Project[] = [
     tags: ["Flutter", "Cloud", "AI"],
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.palomapos.pos&hl=en",
-    appStoreLink: "https://apps.apple.com/dk/app/palomapos/id6474072326",
-    webLink: "https://palomapos.com",
+    appStoreLink:
+      "https://apps.apple.com/dk/app/palomapos/id6474072326",
+    webLink:
+      "https://palomapos.com",
   },
   {
-    id: 11,
-    title: "Roppi",
+    id: 10,
+    title: "Duffle",
     description:
-      "Nigerian Q-commerce flagship. Groceries, food, alcohol, pharmacy, electronics with in-app wallet, real-time tracking, and reservations. Core contributor to the 4-app Roppi ecosystem in Flutter.",
+      "Crypto-to-everyday payments platform. Architected wallet infrastructure, borderless transfers, and the web + mobile client from the ground up.",
     image:
-      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1779826412/portfolio_projects/roppi_superapp_v1_nanobanana.jpg",
-    tags: ["Flutter", "Marketplace", "Payments"],
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1751137250/portfolio_projects/gdwojl0tfb7ury2bztjl.png",
+    tags: ["React", "Node.js", "Fintech"],
     playStoreLink:
-      "https://play.google.com/store/apps/details?id=com.roppi.superapp",
-    webLink: "https://roppi.co",
+      "https://play.google.com/store/apps/details?id=io.ivorychain.duffle",
+    appStoreLink:
+      "https://apps.apple.com/us/app/duffle/id6739775801?platform=ipad",
+    webLink:
+      "https://www.getduffle.io/",
   },
   {
     id: 1,
@@ -59,34 +65,23 @@ export const projects: Project[] = [
     tags: ["Flutter", "Node.js", "AI/ML"],
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.kusnap.kusnapapp&hl=en",
-    appStoreLink: "https://apps.apple.com/ng/app/kusnap/id1670357672",
-    webLink: "https://kusnap.com",
-  },
-  {
-    id: 10,
-    title: "Duffle",
-    description:
-      "Crypto-to-everyday payments platform. Architected wallet infrastructure, borderless transfers, and the web + mobile client from the ground up.",
-    image:
-      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1751137250/portfolio_projects/gdwojl0tfb7ury2bztjl.png",
-    tags: ["React", "Node.js", "Fintech"],
-    webLink: "https://www.getduffle.io/",
     appStoreLink:
-      "https://apps.apple.com/us/app/duffle/id6739775801?platform=ipad",
-    playStoreLink:
-      "https://play.google.com/store/apps/details?id=io.ivorychain.duffle",
+      "https://apps.apple.com/ng/app/kusnap/id1670357672",
+    webLink:
+      "https://kusnap.com",
   },
   {
-    id: 9,
-    title: "Mimecon",
+    id: 11,
+    title: "Roppi",
     description:
-      "AI emoticon creator that turns photos into animated characters. Engineered the generation pipeline, social feed, and real-time sharing across platforms.",
+      "Nigerian Q-commerce flagship. Groceries, food, alcohol, pharmacy, electronics with in-app wallet, real-time tracking, and reservations. Core contributor to the 4-app Roppi ecosystem in Flutter.",
     image:
-      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703175/portfolio_projects/15_ucadqq.png",
-    tags: ["Flutter", "AI/ML", "Firebase"],
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1779826412/portfolio_projects/roppi_superapp_v1_nanobanana.jpg",
+    tags: ["Flutter", "Marketplace", "Payments"],
     playStoreLink:
-      "https://play.google.com/store/apps/details?id=com.ploonet.mimecon&hl=en",
-    appStoreLink: "https://apps.apple.com/kr/app/id6504627348",
+      "https://play.google.com/store/apps/details?id=com.roppi.superapp",
+    webLink:
+      "https://roppi.co",
   },
   {
     id: 7,
@@ -96,8 +91,10 @@ export const projects: Project[] = [
     image:
       "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703174/portfolio_projects/16_w5bpji.png",
     tags: ["Flutter", "React", "SaaS"],
-    appStoreLink: "https://apps.apple.com/us/app/jutigo/id6547832962",
-    webLink: "https://usejutigo.com",
+    appStoreLink:
+      "https://apps.apple.com/us/app/jutigo/id6547832962",
+    webLink:
+      "https://usejutigo.com",
   },
   {
     id: 12,
@@ -140,7 +137,8 @@ export const projects: Project[] = [
     image:
       "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703175/portfolio_projects/18_fx1z8z.png",
     tags: ["Flutter", "Firebase", "Social"],
-    appStoreLink: "https://apps.apple.com/in/app/triberly/id6469516292",
+    appStoreLink:
+      "https://apps.apple.com/in/app/triberly/id6469516292",
   },
   {
     id: 15,
@@ -152,7 +150,8 @@ export const projects: Project[] = [
     tags: ["Flutter", "Logistics", "Marketplace"],
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.faramove.user",
-    webLink: "https://faramove.com",
+    webLink:
+      "https://faramove.com",
   },
   {
     id: 2,
@@ -162,7 +161,8 @@ export const projects: Project[] = [
     image:
       "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1669269235/portfolio_projects/Frame_33_g7wi32.png",
     tags: ["Flutter", "REST API", "Payments"],
-    appStoreLink: "https://apps.apple.com/ca/app/edoko/id1600923527",
+    appStoreLink:
+      "https://apps.apple.com/ca/app/edoko/id1600923527",
   },
   {
     id: 16,
@@ -172,7 +172,21 @@ export const projects: Project[] = [
     image:
       "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1779826425/portfolio_projects/tacbay_v1_nanobanana.jpg",
     tags: ["Flutter", "Marketplace", "Education"],
-    appStoreLink: "https://apps.apple.com/in/app/tacbay/id6479637108",
+    appStoreLink:
+      "https://apps.apple.com/in/app/tacbay/id6479637108",
+  },
+  {
+    id: 9,
+    title: "Mimecon",
+    description:
+      "AI emoticon creator that turns photos into animated characters. Engineered the generation pipeline, social feed, and real-time sharing across platforms.",
+    image:
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703175/portfolio_projects/15_ucadqq.png",
+    tags: ["Flutter", "AI/ML", "Firebase"],
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.ploonet.mimecon&hl=en",
+    appStoreLink:
+      "https://apps.apple.com/kr/app/id6504627348",
   },
   {
     id: 4,
@@ -184,8 +198,10 @@ export const projects: Project[] = [
     tags: ["Flutter", "React", "Fintech"],
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.titanx_change.www",
-    appStoreLink: "https://apps.apple.com/us/app/titanxchange/id6444230222",
-    webLink: "https://titan-website.vercel.app/",
+    appStoreLink:
+      "https://apps.apple.com/us/app/titanxchange/id6444230222",
+    webLink:
+      "https://titan-website.vercel.app/",
   },
   {
     id: 5,
@@ -197,7 +213,8 @@ export const projects: Project[] = [
     tags: ["Flutter", "Fintech", "API"],
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.fourtraderx.app",
-    appStoreLink: "https://apps.apple.com/us/app/4traderx/id1605193631",
+    appStoreLink:
+      "https://apps.apple.com/us/app/4traderx/id1605193631",
   },
 ];
 
