@@ -16,7 +16,7 @@ export const projects: Project[] = [
     description:
       "Munich digital business card SaaS. Shipped the AI scanner (still the headline 630% follow-ups stat), Apple + Google Wallet integration, and i18n foundation as Lead Mobile.",
     image:
-      "/placeholder-image.png",
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1779826409/portfolio_projects/spreadly_v1_nanobanana.jpg",
     tags: ["Flutter", "AI/ML", "Wallet"],
     playStoreLink:
       "https://play.google.com/store/apps/details?id=app.spreadly.app",
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     description:
       "Nigerian Q-commerce flagship. Groceries, food, alcohol, pharmacy, electronics with in-app wallet, real-time tracking, and reservations. Core contributor to the 4-app Roppi ecosystem in Flutter.",
     image:
-      "/placeholder-image.png",
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1779826412/portfolio_projects/roppi_superapp_v1_nanobanana.jpg",
     tags: ["Flutter", "Marketplace", "Payments"],
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.roppi.superapp",
@@ -105,7 +105,7 @@ export const projects: Project[] = [
     description:
       "Merchant POS for Roppi vendors. Inventory, restock-cycle math, revenue tracking, and customer analytics.",
     image:
-      "/placeholder-image.png",
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1779826414/portfolio_projects/roppi_merchant_v1_nanobanana.jpg",
     tags: ["Flutter", "B2B", "SaaS"],
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.roppi.merchant",
@@ -116,7 +116,7 @@ export const projects: Project[] = [
     description:
       "Gig courier app for Roppi deliveries. Bike and car modes, earnings estimator, on-demand cashout. Live in Lagos and Ibadan.",
     image:
-      "/placeholder-image.png",
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1779826417/portfolio_projects/roppi_driver_v1_nanobanana.jpg",
     tags: ["Flutter", "Logistics", "Gig"],
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.roppi.roppi_driver",
@@ -127,7 +127,7 @@ export const projects: Project[] = [
     description:
       "Internal zone manager app for Roppi fulfillment supervisors. Area operations and dispatch oversight.",
     image:
-      "/placeholder-image.png",
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1779826420/portfolio_projects/roppi_manager_v1_nanobanana.jpg",
     tags: ["Flutter", "Operations"],
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.roppi.agent",
@@ -148,7 +148,7 @@ export const projects: Project[] = [
     description:
       "Nigerian last-mile and express logistics. Three-sided marketplace covering users, riders, and hubs.",
     image:
-      "/placeholder-image.png",
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1779826422/portfolio_projects/faramove_v1_nanobanana.jpg",
     tags: ["Flutter", "Logistics", "Marketplace"],
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.faramove.user",
@@ -170,7 +170,7 @@ export const projects: Project[] = [
     description:
       "TVET marketplace for Nigerian technicians, artisans, and vocational learners. Multi-platform iOS app.",
     image:
-      "/placeholder-image.png",
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1779826425/portfolio_projects/tacbay_v1_nanobanana.jpg",
     tags: ["Flutter", "Marketplace", "Education"],
     appStoreLink: "https://apps.apple.com/in/app/tacbay/id6479637108",
   },
