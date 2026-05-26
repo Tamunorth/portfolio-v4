@@ -134,7 +134,7 @@ export function Projects() {
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"
         >
           {initialProjects.map((project, i) => (
-            <StaggerItem key={project.id}>
+            <StaggerItem key={project.id} index={i} staggerDelay={0.06}>
               <ProjectCard project={project} index={i} />
             </StaggerItem>
           ))}

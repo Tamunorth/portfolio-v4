@@ -11,6 +11,17 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: 7,
+    title: "Jutigo",
+    description:
+      "Invoice management SaaS. Built the full product — document generation, custom branding engine, client delivery system, and web dashboard.",
+    image:
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703174/portfolio_projects/16_w5bpji.png",
+    tags: ["Flutter", "React", "SaaS"],
+    appStoreLink: "https://apps.apple.com/us/app/jutigo/id6547832962",
+    webLink: "https://jutigo.com",
+  },
+  {
     id: 1,
     title: "Kusnap",
     description:
@@ -105,17 +116,6 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703175/portfolio_projects/18_fx1z8z.png",
     tags: ["Flutter", "Firebase", "Social"],
     appStoreLink: "https://apps.apple.com/in/app/triberly/id6469516292",
-  },
-  {
-    id: 7,
-    title: "Jutigo",
-    description:
-      "Invoice management SaaS. Built the full product — document generation, custom branding engine, client delivery system, and web dashboard.",
-    image:
-      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703174/portfolio_projects/16_w5bpji.png",
-    tags: ["Flutter", "React", "SaaS"],
-    appStoreLink: "https://apps.apple.com/us/app/jutigo/id6547832962",
-    webLink: "https://usejutigo.com",
   },
 ];
 

@@ -10,49 +10,35 @@ interface StaggerChildrenProps {
 
 export function StaggerChildren({
   children,
-  staggerDelay = 0.1,
   className,
-  once = true,
 }: StaggerChildrenProps) {
-  return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once, margin: "-50px" }}
-      variants={{
-        visible: {
-          transition: {
-            staggerChildren: staggerDelay,
-          },
-        },
-      }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
+  return <div className={className}>{children}</div>;
+}
+
+interface StaggerItemProps {
+  children: ReactNode;
+  className?: string;
+  index?: number;
+  staggerDelay?: number;
+  once?: boolean;
 }
 
 export function StaggerItem({
   children,
   className,
-}: {
-  children: ReactNode;
-  className?: string;
-}) {
+  index = 0,
+  staggerDelay = 0.06,
+  once = true,
+}: StaggerItemProps) {
   return (
     <motion.div
-      variants={{
-        hidden: { opacity: 0, y: 25, filter: "blur(4px)" },
-        visible: {
-          opacity: 1,
-          y: 0,
-          filter: "blur(0px)",
-          transition: {
-            duration: 0.5,
-            ease: [0.22, 1, 0.36, 1],
-          },
-        },
+      initial={{ opacity: 0, y: 25, filter: "blur(4px)" }}
+      whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+      viewport={{ once, margin: "-50px" }}
+      transition={{
+        duration: 0.5,
+        delay: index * staggerDelay,
+        ease: [0.22, 1, 0.36, 1],
       }}
       className={className}
     >

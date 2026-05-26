@@ -88,8 +88,8 @@ export function About() {
           staggerDelay={0.08}
           className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 mb-20 md:mb-24"
         >
-          {highlights.map((item) => (
-            <StaggerItem key={item.title}>
+          {highlights.map((item, i) => (
+            <StaggerItem key={item.title} index={i} staggerDelay={0.08}>
               <TiltCard tiltAmount={5} className="h-full">
                 <div className="group px-7 py-7 sm:px-8 sm:py-8 rounded-sm bg-surface border border-border hover:border-border-light transition-all duration-300 h-full">
                   <div className="w-10 h-10 rounded-sm bg-accent/[0.08] flex items-center justify-center mb-6 group-hover:bg-accent/[0.15] transition-colors duration-300">
