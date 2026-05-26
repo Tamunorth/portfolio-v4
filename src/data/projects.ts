@@ -16,7 +16,7 @@ export const projects: Project[] = [
     description:
       "Invoice management SaaS. Built the full product — document generation, custom branding engine, client delivery system, and web dashboard.",
     image:
-      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703174/portfolio_projects/16_w5bpji.png",
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1779776118/portfolio_projects/jutigo_v1_nanobanana.jpg",
     tags: ["Flutter", "React", "SaaS"],
     appStoreLink: "https://apps.apple.com/us/app/jutigo/id6547832962",
     webLink: "https://usejutigo.com",
@@ -65,7 +65,8 @@ export const projects: Project[] = [
     title: "Paloma POS",
     description:
       "AI-first cloud POS for restaurants. Designed the offline-first architecture, real-time sync engine, and intelligent order management system.",
-    image: "/placeholder-image.png",
+    image:
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1779776122/portfolio_projects/paloma_pos_v1_nanobanana.jpg",
     tags: ["Flutter", "Cloud", "AI"],
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.palomapos.pos&hl=en",
