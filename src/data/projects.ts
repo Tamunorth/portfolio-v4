@@ -19,7 +19,7 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703174/portfolio_projects/16_w5bpji.png",
     tags: ["Flutter", "React", "SaaS"],
     appStoreLink: "https://apps.apple.com/us/app/jutigo/id6547832962",
-    webLink: "https://jutigo.com",
+    webLink: "https://usejutigo.com",
   },
   {
     id: 1,
