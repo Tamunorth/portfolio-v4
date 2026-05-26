@@ -31,7 +31,7 @@ const highlights = [
 
 const stats = [
   { value: "5+", label: "Years building" },
-  { value: "9+", label: "Products shipped" },
+  { value: "15+", label: "Products shipped" },
   { value: "3", label: "Platforms" },
   { value: "40%", label: "Best sales lift" },
 ];

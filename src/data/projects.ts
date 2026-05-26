@@ -11,21 +11,49 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 7,
-    title: "Jutigo",
+    id: 8,
+    title: "Spreadly",
     description:
-      "Invoice management SaaS. Built the full product — document generation, custom branding engine, client delivery system, and web dashboard.",
+      "Munich digital business card SaaS. Shipped the AI scanner (still the headline 630% follow-ups stat), Apple + Google Wallet integration, and i18n foundation as Lead Mobile.",
     image:
-      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703174/portfolio_projects/16_w5bpji.png",
-    tags: ["Flutter", "React", "SaaS"],
-    appStoreLink: "https://apps.apple.com/us/app/jutigo/id6547832962",
-    webLink: "https://usejutigo.com",
+      "/placeholder-image.png",
+    tags: ["Flutter", "AI/ML", "Wallet"],
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=app.spreadly.app",
+    appStoreLink:
+      "https://apps.apple.com/us/app/spreadly-digital-business-card/id6448201235",
+    webLink: "https://spreadly.app",
+  },
+  {
+    id: 3,
+    title: "Paloma POS",
+    description:
+      "AI-first cloud POS for restaurants. Designed the offline-first architecture, real-time sync engine, and intelligent order management system.",
+    image:
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1779776122/portfolio_projects/paloma_pos_v1_nanobanana.jpg",
+    tags: ["Flutter", "Cloud", "AI"],
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.palomapos.pos&hl=en",
+    appStoreLink: "https://apps.apple.com/dk/app/palomapos/id6474072326",
+    webLink: "https://palomapos.com",
+  },
+  {
+    id: 11,
+    title: "Roppi",
+    description:
+      "Nigerian Q-commerce flagship. Groceries, food, alcohol, pharmacy, electronics with in-app wallet, real-time tracking, and reservations. Core contributor to the 4-app Roppi ecosystem in Flutter.",
+    image:
+      "/placeholder-image.png",
+    tags: ["Flutter", "Marketplace", "Payments"],
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.roppi.superapp",
+    webLink: "https://roppi.co",
   },
   {
     id: 1,
     title: "Kusnap",
     description:
-      "AI-powered marketplace connecting buyers and sellers. Built the full stack — recommendation engine, real-time chat, payment integration, and cross-platform mobile apps.",
+      "AI-powered marketplace connecting buyers and sellers. Built the full stack, recommendation engine, real-time chat, payment integration, and cross-platform mobile apps.",
     image:
       "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703175/portfolio_projects/17_v6r4n7.png",
     tags: ["Flutter", "Node.js", "AI/ML"],
@@ -33,18 +61,6 @@ export const projects: Project[] = [
       "https://play.google.com/store/apps/details?id=com.kusnap.kusnapapp&hl=en",
     appStoreLink: "https://apps.apple.com/ng/app/kusnap/id1670357672",
     webLink: "https://kusnap.com",
-  },
-  {
-    id: 9,
-    title: "Mimecon",
-    description:
-      "AI emoticon creator — transforms photos into animated characters. Engineered the generation pipeline, social feed, and real-time sharing across platforms.",
-    image:
-      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703175/portfolio_projects/15_ucadqq.png",
-    tags: ["Flutter", "AI/ML", "Firebase"],
-    playStoreLink:
-      "https://play.google.com/store/apps/details?id=com.ploonet.mimecon&hl=en",
-    appStoreLink: "https://apps.apple.com/kr/app/id6504627348",
   },
   {
     id: 10,
@@ -61,17 +77,82 @@ export const projects: Project[] = [
       "https://play.google.com/store/apps/details?id=io.ivorychain.duffle",
   },
   {
-    id: 3,
-    title: "Paloma POS",
+    id: 9,
+    title: "Mimecon",
     description:
-      "AI-first cloud POS for restaurants. Designed the offline-first architecture, real-time sync engine, and intelligent order management system.",
+      "AI emoticon creator that turns photos into animated characters. Engineered the generation pipeline, social feed, and real-time sharing across platforms.",
     image:
-      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1779776122/portfolio_projects/paloma_pos_v1_nanobanana.jpg",
-    tags: ["Flutter", "Cloud", "AI"],
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703175/portfolio_projects/15_ucadqq.png",
+    tags: ["Flutter", "AI/ML", "Firebase"],
     playStoreLink:
-      "https://play.google.com/store/apps/details?id=com.palomapos.pos&hl=en",
-    appStoreLink: "https://apps.apple.com/dk/app/palomapos/id6474072326",
-    webLink: "https://palomapos.com",
+      "https://play.google.com/store/apps/details?id=com.ploonet.mimecon&hl=en",
+    appStoreLink: "https://apps.apple.com/kr/app/id6504627348",
+  },
+  {
+    id: 7,
+    title: "Jutigo",
+    description:
+      "Invoice management SaaS. Built the full product, document generation, custom branding engine, client delivery system, and web dashboard.",
+    image:
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703174/portfolio_projects/16_w5bpji.png",
+    tags: ["Flutter", "React", "SaaS"],
+    appStoreLink: "https://apps.apple.com/us/app/jutigo/id6547832962",
+    webLink: "https://usejutigo.com",
+  },
+  {
+    id: 12,
+    title: "Roppi Business",
+    description:
+      "Merchant POS for Roppi vendors. Inventory, restock-cycle math, revenue tracking, and customer analytics.",
+    image:
+      "/placeholder-image.png",
+    tags: ["Flutter", "B2B", "SaaS"],
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.roppi.merchant",
+  },
+  {
+    id: 13,
+    title: "Roppi Driver",
+    description:
+      "Gig courier app for Roppi deliveries. Bike and car modes, earnings estimator, on-demand cashout. Live in Lagos and Ibadan.",
+    image:
+      "/placeholder-image.png",
+    tags: ["Flutter", "Logistics", "Gig"],
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.roppi.roppi_driver",
+  },
+  {
+    id: 14,
+    title: "Ro Manager",
+    description:
+      "Internal zone manager app for Roppi fulfillment supervisors. Area operations and dispatch oversight.",
+    image:
+      "/placeholder-image.png",
+    tags: ["Flutter", "Operations"],
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.roppi.agent",
+  },
+  {
+    id: 6,
+    title: "Triberly",
+    description:
+      "Social platform for diaspora communities. Engineered real-time messaging, community matching algorithms, and the full mobile experience.",
+    image:
+      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703175/portfolio_projects/18_fx1z8z.png",
+    tags: ["Flutter", "Firebase", "Social"],
+    appStoreLink: "https://apps.apple.com/in/app/triberly/id6469516292",
+  },
+  {
+    id: 15,
+    title: "Faramove",
+    description:
+      "Nigerian last-mile and express logistics. Three-sided marketplace covering users, riders, and hubs.",
+    image:
+      "/placeholder-image.png",
+    tags: ["Flutter", "Logistics", "Marketplace"],
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.faramove.user",
+    webLink: "https://faramove.com",
   },
   {
     id: 2,
@@ -82,6 +163,16 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1669269235/portfolio_projects/Frame_33_g7wi32.png",
     tags: ["Flutter", "REST API", "Payments"],
     appStoreLink: "https://apps.apple.com/ca/app/edoko/id1600923527",
+  },
+  {
+    id: 16,
+    title: "TACBay",
+    description:
+      "TVET marketplace for Nigerian technicians, artisans, and vocational learners. Multi-platform iOS app.",
+    image:
+      "/placeholder-image.png",
+    tags: ["Flutter", "Marketplace", "Education"],
+    appStoreLink: "https://apps.apple.com/in/app/tacbay/id6479637108",
   },
   {
     id: 4,
@@ -107,16 +198,6 @@ export const projects: Project[] = [
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.fourtraderx.app",
     appStoreLink: "https://apps.apple.com/us/app/4traderx/id1605193631",
-  },
-  {
-    id: 6,
-    title: "Triberly",
-    description:
-      "Social platform for diaspora communities. Engineered real-time messaging, community matching algorithms, and the full mobile experience.",
-    image:
-      "https://res.cloudinary.com/dxfwzjz4k/image/upload/v1750703175/portfolio_projects/18_fx1z8z.png",
-    tags: ["Flutter", "Firebase", "Social"],
-    appStoreLink: "https://apps.apple.com/in/app/triberly/id6469516292",
   },
 ];
 
